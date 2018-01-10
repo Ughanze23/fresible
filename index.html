@@ -7,7 +7,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewpoint" content="width=device-width, initial-scale=1">
-
+ 
+<!--bootsrap classes -->
 <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -16,6 +17,29 @@
 
 </head>
     <body>
+
+        <!--modal -->
+<div id="aboutus" class="modal fade" role="dialog">
+<div class="modal-dialog" role="content">
+    <div class="modal-content">
+        <div  class="modal-header">
+        <h4 style="color:#004D40;" class="modal-title">About Fresible</h4>
+        </div>
+        <div class="modal-body" style="background:#004D40; color:floralwhite;">
+            <p>Fresible Company limited is a company which focuses on providing state of the art services in four major categories, which are ICT, Entertainment and Events Management, Law Repository and Digital Marketing.
+            </p>
+            <p>Fresible as brand is focused on making the world a better place with technology and has set itself the goal of becoming the largest tech comapny in the world providing real and timely solutions.</p>
+            <p>The Company office is at 65, Ogunlana Drive, Surulere, Lagos.</p>
+            <p>The Company was established in 2013, still growing and looking to expand in other to be able to attend effectively and efficient to its growing list of clients.</p>
+            <p>The Company was founded by Fred Oyetayo, he holds a degree in law from Afe babalola university and is also a full stack web developer.</p>
+        </div>
+        <div class="modal-footer">
+            <button id="closemodal" type="button" class="btn btn-success">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+
 <header class="jumbotron" style="background: #004D40; color:floralwhite">
     <div class="container">
         <h3>CURRICULUM VITAE</h3>
@@ -114,7 +138,7 @@
              </div>
              <div class="content">      
              <h5>HOBBIES</h5>
-                    <hr style="color:#004D40">
+                    <hr>
                    <ul>
                     <li>Reading novels</li>
                     <li>Coding</li>
@@ -124,7 +148,13 @@
 </div>
                  <footer class="footer">
                         <p align=center>Â© Copyright 2018 My CV</p>
-                  <a class="btn btn-primary" href="#">About Fresible</a>                        
+                  <a  id="openmodal" class="btn btn-primary">About Fresible</a>                        
                  </footer>
-    </body>
+ 
+                 <!-- importing javascript plugins-->
+                 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+                 <script src="node_modules/tether/dist/js/tether.min.js"></script>
+                 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+                  <script src="about.js"></script>
+                </body>
 </html>
